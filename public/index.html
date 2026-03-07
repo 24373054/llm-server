@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>LLM Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 内测码验证弹窗 -->
+    <div class="auth-overlay" id="authOverlay">
+        <div class="auth-modal">
+            <h2>Access Code Required</h2>
+            <p>Enter the beta access code to continue</p>
+            <input type="password" id="accessCode" placeholder="Enter access code" autocomplete="off">
+            <button class="btn-primary" id="submitCode">
+                <span class="btn-text">Submit</span>
+            </button>
+            <div class="error-message hidden" id="errorMessage">Invalid access code</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>LLM Chat</h1>
+            <div class="status" id="status">
+                <span class="dot"></span>
+                <span class="text">Checking...</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="chat-container">
+                <div class="messages" id="messages">
+                    <div class="message assistant">
+                        <div class="message-content">
+                            <p>Hello! I'm a local LLM assistant. How can I help you today?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-area">
+                    <textarea 
+                        id="userInput" 
+                        placeholder="Type your message..."
+                        rows="3"
+                    ></textarea>
+                    <button class="btn-send" id="sendBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
