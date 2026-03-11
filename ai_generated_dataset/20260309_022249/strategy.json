@@ -1,0 +1,54 @@
+{
+  "dataset_name": "自然风景电影感照片",
+  "description": "高质量的自然风景照片，具有电影感和专业摄影风格",
+  "target_count": 10,
+  "image_specs": {
+    "width": 1408,
+    "height": 1024,
+    "steps": 10,
+    "cfg": 2.0
+  },
+  "categories": [
+    {
+      "name": "山脉",
+      "count": 3,
+      "description": "雄伟壮观的山脉景色",
+      "style_keywords": [
+        "壮丽",
+        "宏伟",
+        "自然"
+      ]
+    },
+    {
+      "name": "森林",
+      "count": 3,
+      "description": "茂密的森林和清澈的小溪",
+      "style_keywords": [
+        "宁静",
+        "绿色",
+        "自然"
+      ]
+    },
+    {
+      "name": "湖泊",
+      "count": 2,
+      "description": "平静的湖面和周围的自然风光",
+      "style_keywords": [
+        "平静",
+        "清澈",
+        "自然"
+      ]
+    },
+    {
+      "name": "日落",
+      "count": 2,
+      "description": "美丽的日落景色，带有温暖的色调",
+      "style_keywords": [
+        "温暖",
+        "夕阳",
+        "自然"
+      ]
+    }
+  ],
+  "quality_requirements": "所有图片应具有高分辨率和细腻的细节表现，色彩饱和度适中，光线处理得当，以增强电影感和专业摄影风格。"
+}

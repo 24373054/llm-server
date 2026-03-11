@@ -1,0 +1,47 @@
+[
+  {
+    "category": "城市街道",
+    "prompt": "A bustling city street during a golden hour, with tall skyscrapers reflecting the warm sunlight, vibrant traffic lights, and people walking briskly under clear blue skies, shallow depth of field highlighting the foreground pedestrian, cinematic photography style, 8k quality, high detail",
+    "style_keywords": [
+      "自然光线",
+      "真实感",
+      "细节丰富"
+    ]
+  },
+  {
+    "category": "城市街道",
+    "prompt": "An aerial view of a foggy city street at twilight, with dimly lit buildings and vehicles, soft diffused light filtering through the mist, long exposure capturing the movement of people and cars, realistic urban landscape, film grain adding an analog photography feel, cold blue tones, artistic style",
+    "style_keywords": [
+      "自然光线",
+      "真实感",
+      "细节丰富"
+    ]
+  },
+  {
+    "category": "城市公园",
+    "prompt": "A serene corner of an urban park at sunset, golden hour light illuminating a tranquil scene with trees, benches, and winding paths, captured from a low angle to emphasize the towering trees and pathways, cinematic photography style with shallow depth of field creating a dreamy bokeh effect, high detail and 8k quality, warm tones enhancing the peaceful atmosphere.",
+    "style_keywords": [
+      "柔和色调",
+      "自然风光",
+      "舒适氛围"
+    ]
+  },
+  {
+    "category": "城市建筑",
+    "prompt": "A panoramic aerial view of a city skyline featuring a mix of historical buildings and sleek skyscrapers during a golden hour, with soft diffused sunlight casting long shadows and highlighting the architectural details, cinematic photography style, shallow depth of field to blur the distant buildings, 8k quality, warm golden tones, capturing the majestic and modern essence of the urban landscape.",
+    "style_keywords": [
+      "现代感",
+      "宏伟",
+      "细节捕捉"
+    ]
+  },
+  {
+    "category": "城市夜景",
+    "prompt": "A bustling city street at twilight, with tall skyscrapers illuminated by neon lights and warm orange streetlights, dramatic lighting casting long shadows, aerial view, cinematic photography style, high detail, 8k quality, vibrant colors, urban nightlife atmosphere.",
+    "style_keywords": [
+      "光影对比",
+      "色彩斑斓",
+      "动态感"
+    ]
+  }
+]

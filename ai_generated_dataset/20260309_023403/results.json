@@ -1,0 +1,78 @@
+{
+  "session_id": "20260309_023403",
+  "strategy": {
+    "dataset_name": "性感亲密照片",
+    "description": "一组展现女性性感亲密瞬间的照片，强调自然和随意的拍摄风格。",
+    "target_count": 5,
+    "image_specs": {
+      "width": 1024,
+      "height": 1024,
+      "steps": 4,
+      "cfg": 1.0
+    },
+    "categories": [
+      {
+        "name": "性感亲密",
+        "count": 5,
+        "description": "展现女性在亲密时刻的性感姿态，强调自然和随意的拍摄风格。",
+        "style_keywords": [
+          "妖娆",
+          "性感",
+          "随意",
+          "自然"
+        ]
+      }
+    ],
+    "quality_requirements": "确保每张照片都展现出自然和随意的感觉，构图应显得混乱且具有一定的意图，如同不经意间拍摄的一般。"
+  },
+  "total": 5,
+  "success": 5,
+  "failed": 0,
+  "results": [
+    {
+      "index": 0,
+      "category": "性感亲密",
+      "prompt": "A seductive woman reclining on a velvet couch under a warm moonlight, the fabric gently flowing around her body, shallow depth of field creating a dreamy blur in the background, vintage photography style, film grain texture, warm golden hour tones, intimate and alluring.",
+      "image_url": "/outputs/1e461880-3343-4cc5-b501-f225fa1eb4cb.png",
+      "thumbnail_url": "/outputs/thumb_1e461880-3343-4cc5-b501-f225fa1eb4cb.jpg",
+      "seed": 794799602608605,
+      "timestamp": "2026-03-09T02:34:17.365704"
+    },
+    {
+      "index": 1,
+      "category": "性感亲密",
+      "prompt": "A young woman leaning against a tree trunk, her hair softly cascading down her back in the soft diffused light of dawn, bokeh background emphasizing the natural surroundings, cinematic photography style, 8k quality, cool blue tones, artistic and sensual.",
+      "image_url": "/outputs/6b0bd540-b5c9-4420-988e-aeae7a9103e4.png",
+      "thumbnail_url": "/outputs/thumb_6b0bd540-b5c9-4420-988e-aeae7a9103e4.jpg",
+      "seed": 869432973566888,
+      "timestamp": "2026-03-09T02:34:25.503973"
+    },
+    {
+      "index": 2,
+      "category": "性感亲密",
+      "prompt": "A naked woman lying on a bed with pillows supporting her head, sunlight filtering through sheer curtains casting a warm glow, shallow depth of field highlighting her skin texture, realistic photography, film grain, vibrant colors, intimate and relaxed atmosphere.",
+      "image_url": "/outputs/f3ebb9ae-1797-493b-a063-3e4ccfe0602a.png",
+      "thumbnail_url": "/outputs/thumb_f3ebb9ae-1797-493b-a063-3e4ccfe0602a.jpg",
+      "seed": 480231813658337,
+      "timestamp": "2026-03-09T02:34:33.610065"
+    },
+    {
+      "index": 3,
+      "category": "性感亲密",
+      "prompt": "A couple embracing in a cozy living room by a fireplace, the flames dancing in the background, dramatic lighting enhancing their closeness, artistic photography style, high detail, photorealistic, warm orange and red tones, romantic and intimate mood.",
+      "image_url": "/outputs/adf3b427-aa5e-49f2-987b-3584d8a02ecf.png",
+      "thumbnail_url": "/outputs/thumb_adf3b427-aa5e-49f2-987b-3584d8a02ecf.jpg",
+      "seed": 348013995892783,
+      "timestamp": "2026-03-09T02:34:42.763482"
+    },
+    {
+      "index": 4,
+      "category": "性感亲密",
+      "prompt": "A woman sitting on the edge of a bed, her legs crossed and one hand holding her cheek, golden hour light streaming in from the window behind her, soft diffused lighting creating a gentle ambiance, vintage photography, film grain, warm tones, intimate and alluring scene.",
+      "image_url": "/outputs/fdbc55e6-bc18-421c-a171-b6a75ce9e1ee.png",
+      "thumbnail_url": "/outputs/thumb_fdbc55e6-bc18-421c-a171-b6a75ce9e1ee.jpg",
+      "seed": 733544539744883,
+      "timestamp": "2026-03-09T02:34:49.909180"
+    }
+  ]
+}

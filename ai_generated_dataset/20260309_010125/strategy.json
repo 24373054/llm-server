@@ -1,0 +1,54 @@
+{
+  "dataset_name": "四季自然风景图片集",
+  "description": "本数据集包含春夏秋冬四个季节的不同自然风景图片，每季包含日出、正午、傍晚和夜景四种时间的风景。",
+  "target_count": 100,
+  "image_specs": {
+    "width": 1024,
+    "height": 1024,
+    "steps": 10,
+    "cfg": 2.0
+  },
+  "categories": [
+    {
+      "name": "春季",
+      "count": 25,
+      "description": "春季的自然风景，包括嫩绿的草地、盛开的花朵等。",
+      "style_keywords": [
+        "嫩绿",
+        "花朵",
+        "生机勃勃"
+      ]
+    },
+    {
+      "name": "夏季",
+      "count": 25,
+      "description": "夏季的自然风景，包括茂密的树林、清澈的溪流等。",
+      "style_keywords": [
+        "茂密",
+        "树林",
+        "清凉"
+      ]
+    },
+    {
+      "name": "秋季",
+      "count": 25,
+      "description": "秋季的自然风景，包括金黄的落叶、成熟的果实等。",
+      "style_keywords": [
+        "金黄",
+        "落叶",
+        "丰收"
+      ]
+    },
+    {
+      "name": "冬季",
+      "count": 25,
+      "description": "冬季的自然风景，包括白雪覆盖的山川、冰封的湖泊等。",
+      "style_keywords": [
+        "白雪",
+        "山川",
+        "寂静"
+      ]
+    }
+  ],
+  "quality_requirements": "所有图片需保持高质量，细节丰富，色彩鲜明，光线处理得当，确保自然风景的真实感和美感。"
+}

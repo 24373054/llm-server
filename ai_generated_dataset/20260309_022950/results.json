@@ -1,0 +1,107 @@
+{
+  "session_id": "20260309_022950",
+  "strategy": {
+    "dataset_name": "城市实景照片",
+    "description": "一组5张城市实景照片，风格接近随手拍摄的照片。",
+    "target_count": 5,
+    "image_specs": {
+      "width": 1024,
+      "height": 1024,
+      "steps": 4,
+      "cfg": 1.0
+    },
+    "categories": [
+      {
+        "name": "城市街道",
+        "count": 2,
+        "description": "展示繁忙的城市街道场景，如人行道、车辆和建筑物。",
+        "style_keywords": [
+          "自然光线",
+          "真实感",
+          "细节丰富"
+        ]
+      },
+      {
+        "name": "城市公园",
+        "count": 1,
+        "description": "展示城市公园的宁静角落，如树木、长椅和小径。",
+        "style_keywords": [
+          "柔和色调",
+          "自然风光",
+          "舒适氛围"
+        ]
+      },
+      {
+        "name": "城市建筑",
+        "count": 1,
+        "description": "展示具有代表性的城市建筑，如摩天大楼或历史建筑。",
+        "style_keywords": [
+          "现代感",
+          "宏伟",
+          "细节捕捉"
+        ]
+      },
+      {
+        "name": "城市夜景",
+        "count": 1,
+        "description": "展示城市的夜晚景象，如灯光、夜空和繁忙的街道。",
+        "style_keywords": [
+          "光影对比",
+          "色彩斑斓",
+          "动态感"
+        ]
+      }
+    ],
+    "quality_requirements": "确保每张照片都具有良好的清晰度和真实的色彩表现，尽量捕捉到城市生活的细节和氛围。"
+  },
+  "total": 5,
+  "success": 5,
+  "failed": 0,
+  "results": [
+    {
+      "index": 0,
+      "category": "城市街道",
+      "prompt": "A bustling city street during a golden hour, with tall skyscrapers reflecting the warm sunlight, vibrant traffic lights, and people walking briskly under clear blue skies, shallow depth of field highlighting the foreground pedestrian, cinematic photography style, 8k quality, high detail",
+      "image_url": "/outputs/093915f9-c0b0-47e8-b31f-47ee6a1d4572.png",
+      "thumbnail_url": "/outputs/thumb_093915f9-c0b0-47e8-b31f-47ee6a1d4572.jpg",
+      "seed": 42288925883767,
+      "timestamp": "2026-03-09T02:30:08.403462"
+    },
+    {
+      "index": 1,
+      "category": "城市街道",
+      "prompt": "An aerial view of a foggy city street at twilight, with dimly lit buildings and vehicles, soft diffused light filtering through the mist, long exposure capturing the movement of people and cars, realistic urban landscape, film grain adding an analog photography feel, cold blue tones, artistic style",
+      "image_url": "/outputs/34db2838-ad0e-4ed6-81e3-b07b228a90c1.png",
+      "thumbnail_url": "/outputs/thumb_34db2838-ad0e-4ed6-81e3-b07b228a90c1.jpg",
+      "seed": 555627405454560,
+      "timestamp": "2026-03-09T02:30:16.546417"
+    },
+    {
+      "index": 2,
+      "category": "城市公园",
+      "prompt": "A serene corner of an urban park at sunset, golden hour light illuminating a tranquil scene with trees, benches, and winding paths, captured from a low angle to emphasize the towering trees and pathways, cinematic photography style with shallow depth of field creating a dreamy bokeh effect, high detail and 8k quality, warm tones enhancing the peaceful atmosphere.",
+      "image_url": "/outputs/0baf5a19-9216-4fd6-9df0-002cd935be81.png",
+      "thumbnail_url": "/outputs/thumb_0baf5a19-9216-4fd6-9df0-002cd935be81.jpg",
+      "seed": 90277025452095,
+      "timestamp": "2026-03-09T02:30:24.655178"
+    },
+    {
+      "index": 3,
+      "category": "城市建筑",
+      "prompt": "A panoramic aerial view of a city skyline featuring a mix of historical buildings and sleek skyscrapers during a golden hour, with soft diffused sunlight casting long shadows and highlighting the architectural details, cinematic photography style, shallow depth of field to blur the distant buildings, 8k quality, warm golden tones, capturing the majestic and modern essence of the urban landscape.",
+      "image_url": "/outputs/406d312e-b267-4151-b16a-2471865ce657.png",
+      "thumbnail_url": "/outputs/thumb_406d312e-b267-4151-b16a-2471865ce657.jpg",
+      "seed": 915837062539,
+      "timestamp": "2026-03-09T02:30:32.810179"
+    },
+    {
+      "index": 4,
+      "category": "城市夜景",
+      "prompt": "A bustling city street at twilight, with tall skyscrapers illuminated by neon lights and warm orange streetlights, dramatic lighting casting long shadows, aerial view, cinematic photography style, high detail, 8k quality, vibrant colors, urban nightlife atmosphere.",
+      "image_url": "/outputs/3ba06d3c-7a6b-4791-a7f5-ba2b890e4739.png",
+      "thumbnail_url": "/outputs/thumb_3ba06d3c-7a6b-4791-a7f5-ba2b890e4739.jpg",
+      "seed": 981868019552794,
+      "timestamp": "2026-03-09T02:30:41.976757"
+    }
+  ]
+}

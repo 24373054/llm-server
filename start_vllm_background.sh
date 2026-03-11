@@ -10,7 +10,7 @@ PORT=8000
 LOG_FILE="$HOME/yz/AI-movie/llm-server/vllm.log"
 
 # 使用GPU 2（空闲的A100-SXM4-40GB）
-export CUDA_VISIBLE_DEVICES=2
+export CUDA_VISIBLE_DEVICES=6
 
 # 检查是否已经运行
 if pgrep -f "vllm.entrypoints.openai.api_server" > /dev/null; then

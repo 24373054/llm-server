@@ -1,0 +1,25 @@
+{
+  "dataset_name": "性感亲密照片",
+  "description": "一组展现女性性感亲密瞬间的照片，强调自然和随意的拍摄风格。",
+  "target_count": 5,
+  "image_specs": {
+    "width": 1024,
+    "height": 1024,
+    "steps": 4,
+    "cfg": 1.0
+  },
+  "categories": [
+    {
+      "name": "性感亲密",
+      "count": 5,
+      "description": "展现女性在亲密时刻的性感姿态，强调自然和随意的拍摄风格。",
+      "style_keywords": [
+        "妖娆",
+        "性感",
+        "随意",
+        "自然"
+      ]
+    }
+  ],
+  "quality_requirements": "确保每张照片都展现出自然和随意的感觉，构图应显得混乱且具有一定的意图，如同不经意间拍摄的一般。"
+}

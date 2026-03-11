@@ -1,0 +1,92 @@
+[
+  {
+    "category": "山脉",
+    "prompt": "Majestic mountain range under a clear blue sky during golden hour, aerial view, dramatic lighting, cinematic photography style, 8k quality, vibrant colors, realistic texture",
+    "style_keywords": [
+      "壮丽",
+      "宏伟",
+      "自然"
+    ]
+  },
+  {
+    "category": "山脉",
+    "prompt": "Serene snow-capped peaks in the twilight with soft diffused light, wide angle shot, peaceful atmosphere, film photography style, vintage photo aesthetic, cool blue tones, high detail",
+    "style_keywords": [
+      "壮丽",
+      "宏伟",
+      "自然"
+    ]
+  },
+  {
+    "category": "山脉",
+    "prompt": "Stormy mountains with lightning in the distance, panoramic view from ground level, dramatic rim light, cinematic style, film grain, dark tones, atmospheric and dramatic mood, ultra realistic quality",
+    "style_keywords": [
+      "壮丽",
+      "宏伟",
+      "自然"
+    ]
+  },
+  {
+    "category": "森林",
+    "prompt": "A dense forest at sunrise with a golden hour glow illuminating the canopy, wide-angle shot capturing the towering trees and winding stream, cinematic style, high detail, 8k quality, warm tones, artistic impressionist touch",
+    "style_keywords": [
+      "宁静",
+      "绿色",
+      "自然"
+    ]
+  },
+  {
+    "category": "森林",
+    "prompt": "An overcast day in the forest, soft diffused light filtering through the leaves, a close-up macro shot of the intricate patterns on a fallen log, realistic style, film grain, shallow depth of field, bokeh background, ultra realistic, muted cool blue tones",
+    "style_keywords": [
+      "宁静",
+      "绿色",
+      "自然"
+    ]
+  },
+  {
+    "category": "森林",
+    "prompt": "A panoramic aerial view of the forest at dusk, dramatic lighting creating silhouettes against the fading sky, long exposure to capture the movement of the trees and water, professional photography style, sharp focus, vibrant green hues, serene and tranquil atmosphere",
+    "style_keywords": [
+      "宁静",
+      "绿色",
+      "自然"
+    ]
+  },
+  {
+    "category": "湖泊",
+    "prompt": "A serene lake at sunrise with mist rising from the calm waters, golden hour sunlight casting warm tones on the surrounding lush greenery, wide angle shot capturing the vast expanse, cinematic photography style, shallow depth of field, 8k quality, film grain",
+    "style_keywords": [
+      "平静",
+      "清澈",
+      "自然"
+    ]
+  },
+  {
+    "category": "湖泊",
+    "prompt": "A tranquil lake at dusk with soft diffused light illuminating the landscape, overcast sky adding a cool blue hue, aerial view emphasizing the expansive water surface, realistic photographic style, ultra realistic quality, sharp focus, long exposure technique",
+    "style_keywords": [
+      "平静",
+      "清澈",
+      "自然"
+    ]
+  },
+  {
+    "category": "日落",
+    "prompt": "A serene coastal landscape with golden hour sunlight casting long shadows on the beach, waves gently rolling towards the shore, birds flying overhead, shallow depth of field focusing on the horizon, cinematic lighting, 8k quality, warm golden tones, realistic art style",
+    "style_keywords": [
+      "温暖",
+      "夕阳",
+      "自然"
+    ]
+  },
+  {
+    "category": "日落",
+    "prompt": "An impressionist painting of a misty forest during twilight, dramatic lighting with backlighting through the trees, fog creating a sense of mystery, bokeh backgrounds for distant elements, wide angle shot capturing the full scene, film grain texture, soft diffused light, cool blue hues, artistic and dreamy atmosphere",
+    "style_keywords": [
+      "温暖",
+      "夕阳",
+      "自然"
+    ]
+  }
+]

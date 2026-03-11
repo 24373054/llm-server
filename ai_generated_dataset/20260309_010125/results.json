@@ -1,0 +1,908 @@
+{
+  "session_id": "20260309_010125",
+  "strategy": {
+    "dataset_name": "四季自然风景图片集",
+    "description": "本数据集包含春夏秋冬四个季节的不同自然风景图片，每季包含日出、正午、傍晚和夜景四种时间的风景。",
+    "target_count": 100,
+    "image_specs": {
+      "width": 1024,
+      "height": 1024,
+      "steps": 10,
+      "cfg": 2.0
+    },
+    "categories": [
+      {
+        "name": "春季",
+        "count": 25,
+        "description": "春季的自然风景，包括嫩绿的草地、盛开的花朵等。",
+        "style_keywords": [
+          "嫩绿",
+          "花朵",
+          "生机勃勃"
+        ]
+      },
+      {
+        "name": "夏季",
+        "count": 25,
+        "description": "夏季的自然风景，包括茂密的树林、清澈的溪流等。",
+        "style_keywords": [
+          "茂密",
+          "树林",
+          "清凉"
+        ]
+      },
+      {
+        "name": "秋季",
+        "count": 25,
+        "description": "秋季的自然风景，包括金黄的落叶、成熟的果实等。",
+        "style_keywords": [
+          "金黄",
+          "落叶",
+          "丰收"
+        ]
+      },
+      {
+        "name": "冬季",
+        "count": 25,
+        "description": "冬季的自然风景，包括白雪覆盖的山川、冰封的湖泊等。",
+        "style_keywords": [
+          "白雪",
+          "山川",
+          "寂静"
+        ]
+      }
+    ],
+    "quality_requirements": "所有图片需保持高质量，细节丰富，色彩鲜明，光线处理得当，确保自然风景的真实感和美感。"
+  },
+  "total": 94,
+  "success": 94,
+  "failed": 0,
+  "results": [
+    {
+      "index": 0,
+      "category": "春季",
+      "prompt": "A vibrant spring meadow with a variety of wildflowers in full bloom under soft diffused sunlight, emphasizing the tender greenery and abundant life.",
+      "image_url": "/outputs/e124298b-245d-4a4f-b9d6-7a413cdda9ad.png",
+      "thumbnail_url": "/outputs/thumb_e124298b-245d-4a4f-b9d6-7a413cdda9ad.jpg",
+      "seed": 768657145631389,
+      "timestamp": "2026-03-09T01:02:20.561298"
+    },
+    {
+      "index": 1,
+      "category": "春季",
+      "prompt": "Early morning mist over a blooming cherry blossom grove, creating a dreamy atmosphere with warm golden hour lighting.",
+      "image_url": "/outputs/7747bc33-0717-4a45-ac27-709a2eb304b5.png",
+      "thumbnail_url": "/outputs/thumb_7747bc33-0717-4a45-ac27-709a2eb304b5.jpg",
+      "seed": 376476840787968,
+      "timestamp": "2026-03-09T01:02:36.746056"
+    },
+    {
+      "index": 2,
+      "category": "春季",
+      "prompt": "A close-up shot of a delicate tulip flower, focusing on its intricate petal patterns against a blurred green background.",
+      "image_url": "/outputs/eb61e3d9-6a19-4ccd-92c2-29a60c5576c9.png",
+      "thumbnail_url": "/outputs/thumb_eb61e3d9-6a19-4ccd-92c2-29a60c5576c9.jpg",
+      "seed": 694701920004844,
+      "timestamp": "2026-03-09T01:02:57.942528"
+    },
+    {
+      "index": 3,
+      "category": "春季",
+      "prompt": "A serene pond with a few water lilies floating on the surface, reflecting the lush green foliage of the surrounding trees.",
+      "image_url": "/outputs/4bb646ee-24ad-44a8-b6ca-4efbc1995768.png",
+      "thumbnail_url": "/outputs/thumb_4bb646ee-24ad-44a8-b6ca-4efbc1995768.jpg",
+      "seed": 878098153269718,
+      "timestamp": "2026-03-09T01:03:14.098470"
+    },
+    {
+      "index": 4,
+      "category": "春季",
+      "prompt": "A group of young daffodils bending slightly in the breeze, casting dynamic shadows on the grassy field.",
+      "image_url": "/outputs/511a16ee-d98d-44eb-92a6-85e2c6bf847f.png",
+      "thumbnail_url": "/outputs/thumb_511a16ee-d98d-44eb-92a6-85e2c6bf847f.jpg",
+      "seed": 331936242941260,
+      "timestamp": "2026-03-09T01:03:30.275706"
+    },
+    {
+      "index": 5,
+      "category": "春季",
+      "prompt": "A panoramic view of a hillside covered in budding fruit trees with pink and white blossoms, seen from a distance at sunrise.",
+      "image_url": "/outputs/c19e6840-9f2c-44ab-bfbb-e4d823ec9d5c.png",
+      "thumbnail_url": "/outputs/thumb_c19e6840-9f2c-44ab-bfbb-e4d823ec9d5c.jpg",
+      "seed": 783225594415729,
+      "timestamp": "2026-03-09T01:03:47.435270"
+    },
+    {
+      "index": 6,
+      "category": "春季",
+      "prompt": "A close-up of a dew-covered blade of grass with tiny droplets glistening in the morning sun.",
+      "image_url": "/outputs/1b18bdda-9f47-4dcd-8c73-9cae57861680.png",
+      "thumbnail_url": "/outputs/thumb_1b18bdda-9f47-4dcd-8c73-9cae57861680.jpg",
+      "seed": 781182689365595,
+      "timestamp": "2026-03-09T01:04:03.597060"
+    },
+    {
+      "index": 7,
+      "category": "春季",
+      "prompt": "A row of colorful flowering bushes bordering a small forest path, illuminated by a gentle afternoon light.",
+      "image_url": "/outputs/548c084e-739a-423c-a79f-a869e3c3dfee.png",
+      "thumbnail_url": "/outputs/thumb_548c084e-739a-423c-a79f-a869e3c3dfee.jpg",
+      "seed": 702944008893231,
+      "timestamp": "2026-03-09T01:04:20.776618"
+    },
+    {
+      "index": 8,
+      "category": "春季",
+      "prompt": "A patch of newly sprouted wildflowers forming a colorful tapestry against the backdrop of an old oak tree.",
+      "image_url": "/outputs/505e1e0e-ae03-404d-8c67-262575cff63b.png",
+      "thumbnail_url": "/outputs/thumb_505e1e0e-ae03-404d-8c67-262575cff63b.jpg",
+      "seed": 426637542069455,
+      "timestamp": "2026-03-09T01:04:36.955960"
+    },
+    {
+      "index": 9,
+      "category": "春季",
+      "prompt": "A detailed macro shot of a bee collecting nectar from a bright yellow dandelion flower.",
+      "image_url": "/outputs/f39d5676-b6ca-457e-86bb-dc39fca28e07.png",
+      "thumbnail_url": "/outputs/thumb_f39d5676-b6ca-457e-86bb-dc39fca28e07.jpg",
+      "seed": 320450252280957,
+      "timestamp": "2026-03-09T01:04:53.208948"
+    },
+    {
+      "index": 10,
+      "category": "春季",
+      "prompt": "A sunset scene with a variety of blooming wildflowers in the foreground, creating a warm and inviting atmosphere.",
+      "image_url": "/outputs/d21a4855-7b70-499c-a184-ab7fe86f1f45.png",
+      "thumbnail_url": "/outputs/thumb_d21a4855-7b70-499c-a184-ab7fe86f1f45.jpg",
+      "seed": 615727142695148,
+      "timestamp": "2026-03-09T01:05:10.382555"
+    },
+    {
+      "index": 11,
+      "category": "春季",
+      "prompt": "A landscape of a winding river surrounded by lush greenery and spring flowers, with a light fog rolling through the valley.",
+      "image_url": "/outputs/3116dae1-3be8-4c0a-9405-f9c780575178.png",
+      "thumbnail_url": "/outputs/thumb_3116dae1-3be8-4c0a-9405-f9c780575178.jpg",
+      "seed": 126034848353771,
+      "timestamp": "2026-03-09T01:05:26.537620"
+    },
+    {
+      "index": 12,
+      "category": "春季",
+      "prompt": "A close-up of a spider web covered in morning dew, reflecting the vibrant colors of nearby flowering plants.",
+      "image_url": "/outputs/335123e8-6e97-4cd4-8b51-4c8d83ea212c.png",
+      "thumbnail_url": "/outputs/thumb_335123e8-6e97-4cd4-8b51-4c8d83ea212c.jpg",
+      "seed": 218903603923233,
+      "timestamp": "2026-03-09T01:05:47.733929"
+    },
+    {
+      "index": 13,
+      "category": "春季",
+      "prompt": "A field of purple lilacs in full bloom, captured during early evening with long shadows and cool blue tones.",
+      "image_url": "/outputs/b6942b05-ae7f-40e2-b7d7-cc657b4df30c.png",
+      "thumbnail_url": "/outputs/thumb_b6942b05-ae7f-40e2-b7d7-cc657b4df30c.jpg",
+      "seed": 156160265068724,
+      "timestamp": "2026-03-09T01:06:03.892851"
+    },
+    {
+      "index": 14,
+      "category": "春季",
+      "prompt": "A close-up of a single pink cherry blossom petal gently floating down towards a stream, with a soft, romantic feel.",
+      "image_url": "/outputs/6514c889-67c5-48b3-afcb-742c8c3b64d6.png",
+      "thumbnail_url": "/outputs/thumb_6514c889-67c5-48b3-afcb-742c8c3b64d6.jpg",
+      "seed": 903623935133321,
+      "timestamp": "2026-03-09T01:06:20.157784"
+    },
+    {
+      "index": 15,
+      "category": "春季",
+      "prompt": "A blooming apple tree in a rural setting, with soft morning light filtering through the leaves and branches.",
+      "image_url": "/outputs/af48a919-a470-41b6-ac87-07c21fc9e6d0.png",
+      "thumbnail_url": "/outputs/thumb_af48a919-a470-41b6-ac87-07c21fc9e6d0.jpg",
+      "seed": 952295804105599,
+      "timestamp": "2026-03-09T01:06:37.319142"
+    },
+    {
+      "index": 16,
+      "category": "春季",
+      "prompt": "A group of children playing in a meadow filled with wildflowers, under a clear blue sky with fluffy white clouds.",
+      "image_url": "/outputs/7ed0475c-4fa8-4c79-a089-9f679cb17709.png",
+      "thumbnail_url": "/outputs/thumb_7ed0475c-4fa8-4c79-a089-9f679cb17709.jpg",
+      "seed": 827665183452342,
+      "timestamp": "2026-03-09T01:06:53.478977"
+    },
+    {
+      "index": 17,
+      "category": "春季",
+      "prompt": "A lone blooming azalea bush in the middle of a dense forest, with dappled sunlight shining through the canopy.",
+      "image_url": "/outputs/405462a7-d9c0-4ece-8aa7-b878542307b4.png",
+      "thumbnail_url": "/outputs/thumb_405462a7-d9c0-4ece-8aa7-b878542307b4.jpg",
+      "seed": 959682802447107,
+      "timestamp": "2026-03-09T01:07:10.644178"
+    },
+    {
+      "index": 18,
+      "category": "春季",
+      "prompt": "A panoramic view of a city park with a variety of spring flowers and budding trees, seen from above at dusk.",
+      "image_url": "/outputs/93c86e06-b6dc-471a-9e66-688b3cc56592.png",
+      "thumbnail_url": "/outputs/thumb_93c86e06-b6dc-471a-9e66-688b3cc56592.jpg",
+      "seed": 869759562213791,
+      "timestamp": "2026-03-09T01:07:26.798385"
+    },
+    {
+      "index": 19,
+      "category": "春季",
+      "prompt": "A close-up of a bee landing on a vibrant purple iris flower, with the bee's wings and body in sharp focus.",
+      "image_url": "/outputs/063ab271-3131-41e5-a4f6-c3379232d05d.png",
+      "thumbnail_url": "/outputs/thumb_063ab271-3131-41e5-a4f6-c3379232d05d.jpg",
+      "seed": 568410010215271,
+      "timestamp": "2026-03-09T01:07:42.972555"
+    },
+    {
+      "index": 20,
+      "category": "春季",
+      "prompt": "A group of daffodils in full bloom along a country road, with the soft earthy tones of the landscape complementing the bright flowers.",
+      "image_url": "/outputs/0257f41f-5165-4252-b244-853c468da281.png",
+      "thumbnail_url": "/outputs/thumb_0257f41f-5165-4252-b244-853c468da281.jpg",
+      "seed": 116196551631053,
+      "timestamp": "2026-03-09T01:08:01.138849"
+    },
+    {
+      "index": 21,
+      "category": "春季",
+      "prompt": "A close-up of a butterfly perched on a cluster of bright yellow daisies, capturing the intricate patterns of its wings.",
+      "image_url": "/outputs/7f12f9a8-a9d9-4668-acc3-46029b574895.png",
+      "thumbnail_url": "/outputs/thumb_7f12f9a8-a9d9-4668-acc3-46029b574895.jpg",
+      "seed": 382513395424189,
+      "timestamp": "2026-03-09T01:08:17.291967"
+    },
+    {
+      "index": 22,
+      "category": "春季",
+      "prompt": "A detailed macro shot of a spider sitting on a dew-covered leaf, with a background of a vibrant flower garden.",
+      "image_url": "/outputs/dc9aadcb-7fa2-40f6-9f5d-2383ee61eae0.png",
+      "thumbnail_url": "/outputs/thumb_dc9aadcb-7fa2-40f6-9f5d-2383ee61eae0.jpg",
+      "seed": 318181893393636,
+      "timestamp": "2026-03-09T01:08:34.456406"
+    },
+    {
+      "index": 23,
+      "category": "夏季",
+      "prompt": "A dense forest in summer with vibrant green foliage and dappled sunlight filtering through the canopy.",
+      "image_url": "/outputs/4926796b-0d6b-4085-a8e6-143260c96f62.png",
+      "thumbnail_url": "/outputs/thumb_4926796b-0d6b-4085-a8e6-143260c96f62.jpg",
+      "seed": 963301273999223,
+      "timestamp": "2026-03-09T01:08:50.621673"
+    },
+    {
+      "index": 24,
+      "category": "夏季",
+      "prompt": "Clear mountain stream winding through lush greenery under a misty morning sun.",
+      "image_url": "/outputs/0dd104b1-7d38-43d5-ba25-8a54e2bb2c99.png",
+      "thumbnail_url": "/outputs/thumb_0dd104b1-7d38-43d5-ba25-8a54e2bb2c99.jpg",
+      "seed": 11222797070525,
+      "timestamp": "2026-03-09T01:09:07.789277"
+    },
+    {
+      "index": 25,
+      "category": "夏季",
+      "prompt": "Sun-drenched meadow filled with wildflowers beside a tranquil lake reflecting the warm afternoon sky.",
+      "image_url": "/outputs/09fa4fc5-1ac7-4d17-a60a-4c1d04ebe8b7.png",
+      "thumbnail_url": "/outputs/thumb_09fa4fc5-1ac7-4d17-a60a-4c1d04ebe8b7.jpg",
+      "seed": 467718781891618,
+      "timestamp": "2026-03-09T01:09:23.938877"
+    },
+    {
+      "index": 26,
+      "category": "夏季",
+      "prompt": "Thicket of willow trees along a tranquil riverbank, soft shadows playing across the water.",
+      "image_url": "/outputs/739b9237-9046-4331-a4f8-6200fc4516d5.png",
+      "thumbnail_url": "/outputs/thumb_739b9237-9046-4331-a4f8-6200fc4516d5.jpg",
+      "seed": 822117287238893,
+      "timestamp": "2026-03-09T01:09:40.112048"
+    },
+    {
+      "index": 27,
+      "category": "夏季",
+      "prompt": "Sunlight streaming through the leaves creating an intricate pattern on the ground in an ancient woodland.",
+      "image_url": "/outputs/5e0f9a75-b91a-4f39-b4e3-a76bbb137d08.png",
+      "thumbnail_url": "/outputs/thumb_5e0f9a75-b91a-4f39-b4e3-a76bbb137d08.jpg",
+      "seed": 705051311153970,
+      "timestamp": "2026-03-09T01:09:56.468393"
+    },
+    {
+      "index": 28,
+      "category": "夏季",
+      "prompt": "Majestic pine trees towering above a serene stream, with cool, clear waters reflecting the golden hues of the setting sun.",
+      "image_url": "/outputs/d12c3348-3880-464f-9460-0d68c8178c3b.png",
+      "thumbnail_url": "/outputs/thumb_d12c3348-3880-464f-9460-0d68c8178c3b.jpg",
+      "seed": 638518663817647,
+      "timestamp": "2026-03-09T01:10:12.643663"
+    },
+    {
+      "index": 29,
+      "category": "夏季",
+      "prompt": "Dense shrubbery and tall grasses surrounding a crystal-clear spring in a remote valley.",
+      "image_url": "/outputs/26f85cac-9e96-4ed5-b794-26a95608159e.png",
+      "thumbnail_url": "/outputs/thumb_26f85cac-9e96-4ed5-b794-26a95608159e.jpg",
+      "seed": 386398370320882,
+      "timestamp": "2026-03-09T01:10:29.818134"
+    },
+    {
+      "index": 30,
+      "category": "夏季",
+      "prompt": "Summer sunset over a grove of oak trees, casting long, dramatic shadows across the landscape.",
+      "image_url": "/outputs/03c6ac32-6821-4a76-9244-d80856755a81.png",
+      "thumbnail_url": "/outputs/thumb_03c6ac32-6821-4a76-9244-d80856755a81.jpg",
+      "seed": 366899920837927,
+      "timestamp": "2026-03-09T01:10:45.094271"
+    },
+    {
+      "index": 31,
+      "category": "夏季",
+      "prompt": "A cool breeze rustling through the branches of an apple orchard in full bloom during the heat of midday.",
+      "image_url": "/outputs/9e46296f-25ff-46f7-a3f9-252386b349e1.png",
+      "thumbnail_url": "/outputs/thumb_9e46296f-25ff-46f7-a3f9-252386b349e1.jpg",
+      "seed": 717655126351071,
+      "timestamp": "2026-03-09T01:11:02.273920"
+    },
+    {
+      "index": 32,
+      "category": "夏季",
+      "prompt": "Lush tropical rainforest with vibrant epiphytes hanging from moss-covered trees at noon.",
+      "image_url": "/outputs/1ac81ac8-eac7-496d-a6a7-918d556772c5.png",
+      "thumbnail_url": "/outputs/thumb_1ac81ac8-eac7-496d-a6a7-918d556772c5.jpg",
+      "seed": 720048227348297,
+      "timestamp": "2026-03-09T01:11:18.437398"
+    },
+    {
+      "index": 33,
+      "category": "夏季",
+      "prompt": "A quiet pond surrounded by ferns and wildflowers, illuminated by the soft light of an overcast afternoon.",
+      "image_url": "/outputs/ae8b4d05-ea8f-42c5-b50d-85df528319a2.png",
+      "thumbnail_url": "/outputs/thumb_ae8b4d05-ea8f-42c5-b50d-85df528319a2.jpg",
+      "seed": 636175832335135,
+      "timestamp": "2026-03-09T01:11:34.593082"
+    },
+    {
+      "index": 34,
+      "category": "夏季",
+      "prompt": "Sunlit glade with towering maples and maples in vibrant reds and oranges in autumn, set against a blue sky.",
+      "image_url": "/outputs/ab5b15b0-b1b6-4203-9533-d9a2d619505d.png",
+      "thumbnail_url": "/outputs/thumb_ab5b15b0-b1b6-4203-9533-d9a2d619505d.jpg",
+      "seed": 957819335036840,
+      "timestamp": "2026-03-09T01:11:50.744945"
+    },
+    {
+      "index": 35,
+      "category": "夏季",
+      "prompt": "Clearing in the woods with tall, slender bamboo stalks standing in the shade of older trees.",
+      "image_url": "/outputs/9fef6508-b0d7-407d-bd8c-c2b9796fc0f3.png",
+      "thumbnail_url": "/outputs/thumb_9fef6508-b0d7-407d-bd8c-c2b9796fc0f3.jpg",
+      "seed": 397027158317478,
+      "timestamp": "2026-03-09T01:12:06.909812"
+    },
+    {
+      "index": 36,
+      "category": "夏季",
+      "prompt": "Sunbeams piercing the thick canopy of a eucalyptus grove, casting patterns of light on the ground.",
+      "image_url": "/outputs/f599abec-7907-472b-a5b9-42d86e0f3b79.png",
+      "thumbnail_url": "/outputs/thumb_f599abec-7907-472b-a5b9-42d86e0f3b79.jpg",
+      "seed": 155683006761425,
+      "timestamp": "2026-03-09T01:12:23.250060"
+    },
+    {
+      "index": 37,
+      "category": "夏季",
+      "prompt": "A narrow path winding through a dense thicket, leading to a hidden waterfall in a secluded gorge.",
+      "image_url": "/outputs/8fa6c95b-56c4-4783-bc17-0cd27876b151.png",
+      "thumbnail_url": "/outputs/thumb_8fa6c95b-56c4-4783-bc17-0cd27876b151.jpg",
+      "seed": 84372442157548,
+      "timestamp": "2026-03-09T01:12:39.412356"
+    },
+    {
+      "index": 38,
+      "category": "夏季",
+      "prompt": "Sunlight breaking through the clouds onto a verdant hillside covered in wildflowers.",
+      "image_url": "/outputs/16f3f50e-b710-4212-95d2-eb5defe9d306.png",
+      "thumbnail_url": "/outputs/thumb_16f3f50e-b710-4212-95d2-eb5defe9d306.jpg",
+      "seed": 111092946585292,
+      "timestamp": "2026-03-09T01:12:55.635232"
+    },
+    {
+      "index": 39,
+      "category": "夏季",
+      "prompt": "A small brook meandering through a picturesque woodland, framed by towering hemlocks and birch trees.",
+      "image_url": "/outputs/3ec0306e-5ddf-40e1-83a2-5e2c12db48e6.png",
+      "thumbnail_url": "/outputs/thumb_3ec0306e-5ddf-40e1-83a2-5e2c12db48e6.jpg",
+      "seed": 437501129654144,
+      "timestamp": "2026-03-09T01:13:12.798876"
+    },
+    {
+      "index": 40,
+      "category": "夏季",
+      "prompt": "Early morning mist rising from a forested valley, revealing a cluster of dense evergreens in the distance.",
+      "image_url": "/outputs/6c92e5c3-82c9-4e75-8888-7ccae04b8763.png",
+      "thumbnail_url": "/outputs/thumb_6c92e5c3-82c9-4e75-8888-7ccae04b8763.jpg",
+      "seed": 367867135610544,
+      "timestamp": "2026-03-09T01:13:28.954040"
+    },
+    {
+      "index": 41,
+      "category": "夏季",
+      "prompt": "A solitary tree standing in a field of wildflowers, its branches bathed in golden morning light.",
+      "image_url": "/outputs/178594a0-e0c0-4ae5-9924-549f6da140a0.png",
+      "thumbnail_url": "/outputs/thumb_178594a0-e0c0-4ae5-9924-549f6da140a0.jpg",
+      "seed": 600550498611731,
+      "timestamp": "2026-03-09T01:13:46.100452"
+    },
+    {
+      "index": 42,
+      "category": "夏季",
+      "prompt": "Dappled sunlight filtering through the canopy of a young, regenerating forest after a recent wildfire.",
+      "image_url": "/outputs/6176fc9c-2803-4770-932c-77730a9c71d1.png",
+      "thumbnail_url": "/outputs/thumb_6176fc9c-2803-4770-932c-77730a9c71d1.jpg",
+      "seed": 758874061438908,
+      "timestamp": "2026-03-09T01:14:02.264001"
+    },
+    {
+      "index": 43,
+      "category": "夏季",
+      "prompt": "Cool, shady glen with a babbling brook and a variety of wildflowers, shaded by a thick layer of moss.",
+      "image_url": "/outputs/699392d1-20a5-424d-b299-da36621fc907.png",
+      "thumbnail_url": "/outputs/thumb_699392d1-20a5-424d-b299-da36621fc907.jpg",
+      "seed": 150600372562026,
+      "timestamp": "2026-03-09T01:14:18.428521"
+    },
+    {
+      "index": 44,
+      "category": "夏季",
+      "prompt": "An ancient oak tree in a forest clearing, its massive trunk encircled by a carpet of wildflowers in full bloom.",
+      "image_url": "/outputs/3c18a202-4a6c-48c8-bbea-99fbfd1de018.png",
+      "thumbnail_url": "/outputs/thumb_3c18a202-4a6c-48c8-bbea-99fbfd1de018.jpg",
+      "seed": 511111545406338,
+      "timestamp": "2026-03-09T01:14:34.600063"
+    },
+    {
+      "index": 45,
+      "category": "夏季",
+      "prompt": "Midday sun highlighting the intricate texture of bark on an ancient maple, its roots partially submerged in a stream.",
+      "image_url": "/outputs/6c189719-ca02-422d-9f5b-f774cbb7b4ce.png",
+      "thumbnail_url": "/outputs/thumb_6c189719-ca02-422d-9f5b-f774cbb7b4ce.jpg",
+      "seed": 398065061167128,
+      "timestamp": "2026-03-09T01:14:50.919553"
+    },
+    {
+      "index": 46,
+      "category": "夏季",
+      "prompt": "A serene lake in a forested valley, reflecting the vibrant colors of a rainbow appearing in a gap in the trees.",
+      "image_url": "/outputs/82e77fff-d9e0-487c-a998-114c6393f73f.png",
+      "thumbnail_url": "/outputs/thumb_82e77fff-d9e0-487c-a998-114c6393f73f.jpg",
+      "seed": 214228966230432,
+      "timestamp": "2026-03-09T01:15:08.080823"
+    },
+    {
+      "index": 47,
+      "category": "秋季",
+      "prompt": "A golden autumn landscape with a vibrant mix of rustling yellow leaves in the foreground and a deep red apple orchard in the background, soft sunlight casting a warm glow through the trees.",
+      "image_url": "/outputs/6f7254d0-7e15-4269-a6d7-ddd702b9123d.png",
+      "thumbnail_url": "/outputs/thumb_6f7254d0-7e15-4269-a6d7-ddd702b9123d.jpg",
+      "seed": 101493512650344,
+      "timestamp": "2026-03-09T01:15:24.232575"
+    },
+    {
+      "index": 48,
+      "category": "秋季",
+      "prompt": "A serene autumn riverbank covered in fallen leaves, with a lone deer walking by, the golden hues reflected in the calm water.",
+      "image_url": "/outputs/8ce369e9-3624-4caa-80fa-d5cd25cac862.png",
+      "thumbnail_url": "/outputs/thumb_8ce369e9-3624-4caa-80fa-d5cd25cac862.jpg",
+      "seed": 228523860533318,
+      "timestamp": "2026-03-09T01:15:40.475843"
+    },
+    {
+      "index": 49,
+      "category": "秋季",
+      "prompt": "An autumn forest at dusk, with towering trees bathed in the warm orange and yellow light of the setting sun, creating long, dramatic shadows.",
+      "image_url": "/outputs/1af35148-aa71-404c-ab02-f3830ada2714.png",
+      "thumbnail_url": "/outputs/thumb_1af35148-aa71-404c-ab02-f3830ada2714.jpg",
+      "seed": 383088142338135,
+      "timestamp": "2026-03-09T01:15:56.637114"
+    },
+    {
+      "index": 50,
+      "category": "秋季",
+      "prompt": "An artist's impression of a harvested wheat field in autumn, with golden sheaves stacked neatly against a blue sky, silhouetted against a setting sun.",
+      "image_url": "/outputs/07453f16-f890-4647-a5d0-5add962bed77.png",
+      "thumbnail_url": "/outputs/thumb_07453f16-f890-4647-a5d0-5add962bed77.jpg",
+      "seed": 652872681472437,
+      "timestamp": "2026-03-09T01:16:13.796416"
+    },
+    {
+      "index": 51,
+      "category": "秋季",
+      "prompt": "A picturesque village scene in autumn, with thatched roofs under a clear blue sky, surrounded by fields of ripening crops and colorful foliage.",
+      "image_url": "/outputs/f462424b-5e5f-49c3-8d01-a92c72450ec4.png",
+      "thumbnail_url": "/outputs/thumb_f462424b-5e5f-49c3-8d01-a92c72450ec4.jpg",
+      "seed": 477101534174897,
+      "timestamp": "2026-03-09T01:16:29.955695"
+    },
+    {
+      "index": 52,
+      "category": "秋季",
+      "prompt": "An aerial view of a countryside filled with vibrant autumn colors, from fiery reds to deep golds, with winding paths leading through the landscape.",
+      "image_url": "/outputs/81ee2bf1-dbcc-4f2a-bb24-6ae0a5009f3a.png",
+      "thumbnail_url": "/outputs/thumb_81ee2bf1-dbcc-4f2a-bb24-6ae0a5009f3a.jpg",
+      "seed": 872515560296464,
+      "timestamp": "2026-03-09T01:16:46.263503"
+    },
+    {
+      "index": 53,
+      "category": "秋季",
+      "prompt": "A close-up of a fallen leaf, magnified to reveal intricate patterns and textures, with a soft, diffused light highlighting its golden hue.",
+      "image_url": "/outputs/35455223-1add-4a3c-b879-c1d07e111190.png",
+      "thumbnail_url": "/outputs/thumb_35455223-1add-4a3c-b879-c1d07e111190.jpg",
+      "seed": 636818173560953,
+      "timestamp": "2026-03-09T01:17:23.547575"
+    },
+    {
+      "index": 54,
+      "category": "秋季",
+      "prompt": "A cozy autumn evening, with a family gathered around a fireplace, the walls adorned with a collection of dried flowers and harvest decorations.",
+      "image_url": "/outputs/013ee012-85a5-4ab9-8c64-ba2d72c643b3.png",
+      "thumbnail_url": "/outputs/thumb_013ee012-85a5-4ab9-8c64-ba2d72c643b3.jpg",
+      "seed": 378117932282763,
+      "timestamp": "2026-03-09T01:17:39.872843"
+    },
+    {
+      "index": 55,
+      "category": "秋季",
+      "prompt": "A bustling farmers market in autumn, with vendors displaying baskets of ripe apples, squash, and other seasonal produce, against a backdrop of crisp, golden foliage.",
+      "image_url": "/outputs/629b0885-db1e-4a64-93dc-1509b9cd60ed.png",
+      "thumbnail_url": "/outputs/thumb_629b0885-db1e-4a64-93dc-1509b9cd60ed.jpg",
+      "seed": 718382055022297,
+      "timestamp": "2026-03-09T01:17:56.030059"
+    },
+    {
+      "index": 56,
+      "category": "秋季",
+      "prompt": "A tranquil autumn meadow, with tall grasses swaying gently in the breeze, under a clear blue sky with a few scattered clouds.",
+      "image_url": "/outputs/d65fefa2-1f42-4300-8c8e-aca3d0483eaf.png",
+      "thumbnail_url": "/outputs/thumb_d65fefa2-1f42-4300-8c8e-aca3d0483eaf.jpg",
+      "seed": 918760923712775,
+      "timestamp": "2026-03-09T01:18:13.176431"
+    },
+    {
+      "index": 57,
+      "category": "秋季",
+      "prompt": "A dramatic autumn sunset, with orange and pink hues reflecting off a tranquil lake, surrounded by a sea of golden trees and leaves.",
+      "image_url": "/outputs/d50e79bf-5bb4-4caf-8dcf-83dad0ed43c6.png",
+      "thumbnail_url": "/outputs/thumb_d50e79bf-5bb4-4caf-8dcf-83dad0ed43c6.jpg",
+      "seed": 583878491854486,
+      "timestamp": "2026-03-09T01:18:30.341762"
+    },
+    {
+      "index": 58,
+      "category": "秋季",
+      "prompt": "An autumn park, with visitors admiring the colorful foliage, children playing on a wooden playground set, and a small pond with ducks swimming in the background.",
+      "image_url": "/outputs/0f4efc73-fbb9-452a-96d3-390707932a27.png",
+      "thumbnail_url": "/outputs/thumb_0f4efc73-fbb9-452a-96d3-390707932a27.jpg",
+      "seed": 721376273269522,
+      "timestamp": "2026-03-09T01:19:03.789187"
+    },
+    {
+      "index": 59,
+      "category": "秋季",
+      "prompt": "A serene autumn lake, with reflections of golden leaves and a distant mountain range, under a bright but cool blue sky.",
+      "image_url": "/outputs/cf190f4b-8d99-4b9f-8356-98c8e539e09a.png",
+      "thumbnail_url": "/outputs/thumb_cf190f4b-8d99-4b9f-8356-98c8e539e09a.jpg",
+      "seed": 771448124506797,
+      "timestamp": "2026-03-09T01:19:19.045533"
+    },
+    {
+      "index": 60,
+      "category": "秋季",
+      "prompt": "An autumn garden at twilight, with glowing lanterns illuminating the path, surrounded by a profusion of fall blooms and aromatic herbs.",
+      "image_url": "/outputs/b0a72431-2e95-4aa1-9a4d-e9929865b7f5.png",
+      "thumbnail_url": "/outputs/thumb_b0a72431-2e95-4aa1-9a4d-e9929865b7f5.jpg",
+      "seed": 339911600032442,
+      "timestamp": "2026-03-09T01:19:36.212245"
+    },
+    {
+      "index": 61,
+      "category": "秋季",
+      "prompt": "A rustic cabin in the woods during autumn, with golden leaves swirling around the front porch and a fire crackling inside.",
+      "image_url": "/outputs/e297b17d-34df-4e8b-b45c-066a3b708a76.png",
+      "thumbnail_url": "/outputs/thumb_e297b17d-34df-4e8b-b45c-066a3b708a76.jpg",
+      "seed": 691514270144927,
+      "timestamp": "2026-03-09T01:19:52.367380"
+    },
+    {
+      "index": 62,
+      "category": "秋季",
+      "prompt": "A harvest festival scene, with people in costumes dancing around a bonfire, surrounded by displays of fruits and vegetables, with golden leaves scattered around.",
+      "image_url": "/outputs/2131ebb4-9dc9-48fe-a211-2d911362ab37.png",
+      "thumbnail_url": "/outputs/thumb_2131ebb4-9dc9-48fe-a211-2d911362ab37.jpg",
+      "seed": 950310120949460,
+      "timestamp": "2026-03-09T01:20:08.607074"
+    },
+    {
+      "index": 63,
+      "category": "秋季",
+      "prompt": "A solitary figure walking through a field of fallen leaves, with the golden hues catching the last rays of daylight before the sun sets.",
+      "image_url": "/outputs/f6eb0f0a-93b5-42f6-9e35-22e35d6cd611.png",
+      "thumbnail_url": "/outputs/thumb_f6eb0f0a-93b5-42f6-9e35-22e35d6cd611.jpg",
+      "seed": 471038607337156,
+      "timestamp": "2026-03-09T01:20:25.757563"
+    },
+    {
+      "index": 64,
+      "category": "秋季",
+      "prompt": "An artistic representation of an old barn in autumn, with peeling paint and rusty details, set against a backdrop of vivid golden leaves.",
+      "image_url": "/outputs/79ad2dd2-ea70-406b-9afb-d9e364d0bf84.png",
+      "thumbnail_url": "/outputs/thumb_79ad2dd2-ea70-406b-9afb-d9e364d0bf84.jpg",
+      "seed": 574332606435359,
+      "timestamp": "2026-03-09T01:20:41.919223"
+    },
+    {
+      "index": 65,
+      "category": "秋季",
+      "prompt": "A close-up of a mature apple, with its rich golden color contrasting with the dark green stem and leaves.",
+      "image_url": "/outputs/4deb7e2d-8fff-47cb-9c73-3cf25fa5faaf.png",
+      "thumbnail_url": "/outputs/thumb_4deb7e2d-8fff-47cb-9c73-3cf25fa5faaf.jpg",
+      "seed": 148032999814874,
+      "timestamp": "2026-03-09T01:20:58.155533"
+    },
+    {
+      "index": 66,
+      "category": "秋季",
+      "prompt": "A detailed view of a spiderweb covered in autumn leaves, with the web glowing in the warm afternoon sunlight.",
+      "image_url": "/outputs/3509400e-d47f-46d4-9340-d65eb46c0e55.png",
+      "thumbnail_url": "/outputs/thumb_3509400e-d47f-46d4-9340-d65eb46c0e55.jpg",
+      "seed": 442440125919470,
+      "timestamp": "2026-03-09T01:21:14.378786"
+    },
+    {
+      "index": 67,
+      "category": "秋季",
+      "prompt": "An autumn landscape at sunrise, with the first light of day casting long shadows and highlighting the golden and crimson hues of the trees.",
+      "image_url": "/outputs/a9ce28d3-9f61-4e13-9d82-8b5b23e16424.png",
+      "thumbnail_url": "/outputs/thumb_a9ce28d3-9f61-4e13-9d82-8b5b23e16424.jpg",
+      "seed": 263506542810748,
+      "timestamp": "2026-03-09T01:21:31.536240"
+    },
+    {
+      "index": 68,
+      "category": "秋季",
+      "prompt": "A scenic autumn valley, with winding streams, tall trees, and a small bridge, framed by a mix of golden and crimson leaves.",
+      "image_url": "/outputs/2d793c81-2bae-41fe-8e7d-5cdef36e1090.png",
+      "thumbnail_url": "/outputs/thumb_2d793c81-2bae-41fe-8e7d-5cdef36e1090.jpg",
+      "seed": 225701337653637,
+      "timestamp": "2026-03-09T01:21:48.762066"
+    },
+    {
+      "index": 69,
+      "category": "秋季",
+      "prompt": "A detailed macro shot of a fallen leaf, capturing the intricate patterns and textures under a soft, natural light.",
+      "image_url": "/outputs/e75c5965-a6af-4724-b786-9e50fe35ae78.png",
+      "thumbnail_url": "/outputs/thumb_e75c5965-a6af-4724-b786-9e50fe35ae78.jpg",
+      "seed": 270808249655992,
+      "timestamp": "2026-03-09T01:22:04.910107"
+    },
+    {
+      "index": 70,
+      "category": "冬季",
+      "prompt": "A snow-covered mountain range under a soft twilight sky, emphasizing the vast expanse of white through low-angle lighting and a wide-angle lens.",
+      "image_url": "/outputs/fd6afb6b-babb-4ca9-a838-d4ad93f1e009.png",
+      "thumbnail_url": "/outputs/thumb_fd6afb6b-babb-4ca9-a838-d4ad93f1e009.jpg",
+      "seed": 858244973762221,
+      "timestamp": "2026-03-09T01:22:22.058790"
+    },
+    {
+      "index": 71,
+      "category": "冬季",
+      "prompt": "An icy lake reflecting a clear winter night, with distant snowy peaks in silhouette against a starry sky.",
+      "image_url": "/outputs/9262c5cb-eb8b-444e-9c3f-10acf962cc31.png",
+      "thumbnail_url": "/outputs/thumb_9262c5cb-eb8b-444e-9c3f-10acf962cc31.jpg",
+      "seed": 45161555247853,
+      "timestamp": "2026-03-09T01:22:38.207927"
+    },
+    {
+      "index": 72,
+      "category": "冬季",
+      "prompt": "A dense forest with evergreen trees under a blanket of fresh snow, illuminated by golden hour light.",
+      "image_url": "/outputs/9f667a6f-5f8f-476c-a41c-711dfeda3c7f.png",
+      "thumbnail_url": "/outputs/thumb_9f667a6f-5f8f-476c-a41c-711dfeda3c7f.jpg",
+      "seed": 758950242046440,
+      "timestamp": "2026-03-09T01:22:54.379070"
+    },
+    {
+      "index": 73,
+      "category": "冬季",
+      "prompt": "An isolated tree standing alone on a frozen riverbank, with its branches laden with ice crystals.",
+      "image_url": "/outputs/dde28aa3-6913-491f-a429-c611de4babf0.png",
+      "thumbnail_url": "/outputs/thumb_dde28aa3-6913-491f-a429-c611de4babf0.jpg",
+      "seed": 144983521125837,
+      "timestamp": "2026-03-09T01:23:11.535192"
+    },
+    {
+      "index": 74,
+      "category": "冬季",
+      "prompt": "A panoramic view of a snowy valley during dawn, showing the first light breaking over the horizon.",
+      "image_url": "/outputs/5e484639-2b74-446d-9f36-0b087a055db1.png",
+      "thumbnail_url": "/outputs/thumb_5e484639-2b74-446d-9f36-0b087a055db1.jpg",
+      "seed": 183383797130757,
+      "timestamp": "2026-03-09T01:23:27.699711"
+    },
+    {
+      "index": 75,
+      "category": "冬季",
+      "prompt": "Snowflakes gently falling on a quiet forest, captured in motion with long exposure to create a dreamy effect.",
+      "image_url": "/outputs/b05f54b2-4c9d-4fa6-9ff7-fe87301283ca.png",
+      "thumbnail_url": "/outputs/thumb_b05f54b2-4c9d-4fa6-9ff7-fe87301283ca.jpg",
+      "seed": 236163046026759,
+      "timestamp": "2026-03-09T01:23:43.951066"
+    },
+    {
+      "index": 76,
+      "category": "冬季",
+      "prompt": "A lone hiker walking through a snowy field, framed by towering fir trees, with the sun setting behind them.",
+      "image_url": "/outputs/3e76683f-fc76-4051-925c-baa4880ac163.png",
+      "thumbnail_url": "/outputs/thumb_3e76683f-fc76-4051-925c-baa4880ac163.jpg",
+      "seed": 731733043601265,
+      "timestamp": "2026-03-09T01:24:00.102353"
+    },
+    {
+      "index": 77,
+      "category": "冬季",
+      "prompt": "An ancient stone bridge over an icy river, bathed in the warm glow of early morning sunlight.",
+      "image_url": "/outputs/eac6cf51-478a-4cb4-b7f7-b8a3b25af6a9.png",
+      "thumbnail_url": "/outputs/thumb_eac6cf51-478a-4cb4-b7f7-b8a3b25af6a9.jpg",
+      "seed": 365417105459181,
+      "timestamp": "2026-03-09T01:24:17.264062"
+    },
+    {
+      "index": 78,
+      "category": "冬季",
+      "prompt": "A serene winter landscape at dusk, with the last rays of sun casting long shadows across the snow.",
+      "image_url": "/outputs/f12d4193-4816-41d7-891e-d04348df6ff4.png",
+      "thumbnail_url": "/outputs/thumb_f12d4193-4816-41d7-891e-d04348df6ff4.jpg",
+      "seed": 499802064693246,
+      "timestamp": "2026-03-09T01:24:33.415683"
+    },
+    {
+      "index": 79,
+      "category": "冬季",
+      "prompt": "A snow-covered cabin nestled among the hills, illuminated by moonlight, with a thin layer of fog around it.",
+      "image_url": "/outputs/5d8a9450-ef84-4fc2-93a3-fc330cd688dc.png",
+      "thumbnail_url": "/outputs/thumb_5d8a9450-ef84-4fc2-93a3-fc330cd688dc.jpg",
+      "seed": 867801664544120,
+      "timestamp": "2026-03-09T01:24:49.572942"
+    },
+    {
+      "index": 80,
+      "category": "冬季",
+      "prompt": "A frozen waterfall cascading down a cliff, reflecting the pale blue hue of the winter sky.",
+      "image_url": "/outputs/ac1b37ff-96a6-4664-a346-5e9355d22f39.png",
+      "thumbnail_url": "/outputs/thumb_ac1b37ff-96a6-4664-a346-5e9355d22f39.jpg",
+      "seed": 214602302372932,
+      "timestamp": "2026-03-09T01:25:06.734336"
+    },
+    {
+      "index": 81,
+      "category": "冬季",
+      "prompt": "A winter market bustling with activity, surrounded by piles of snow and decorated with festive lights.",
+      "image_url": "/outputs/9453caca-a0b6-483f-a433-865b37d64382.png",
+      "thumbnail_url": "/outputs/thumb_9453caca-a0b6-483f-a433-865b37d64382.jpg",
+      "seed": 249326448443277,
+      "timestamp": "2026-03-09T01:25:22.896865"
+    },
+    {
+      "index": 82,
+      "category": "冬季",
+      "prompt": "A snowboarder performing a trick on a hillside, with the camera capturing the dynamic movement in a split-second exposure.",
+      "image_url": "/outputs/3272cb9e-86af-464a-b8b6-ff9bcdb520bb.png",
+      "thumbnail_url": "/outputs/thumb_3272cb9e-86af-464a-b8b6-ff9bcdb520bb.jpg",
+      "seed": 830687625842743,
+      "timestamp": "2026-03-09T01:25:39.132654"
+    },
+    {
+      "index": 83,
+      "category": "冬季",
+      "prompt": "A close-up of a frozen pond, showcasing the intricate patterns of ice and snow.",
+      "image_url": "/outputs/bd01ef4a-75c4-427c-927c-842c525a6ea9.png",
+      "thumbnail_url": "/outputs/thumb_bd01ef4a-75c4-427c-927c-842c525a6ea9.jpg",
+      "seed": 155377874539710,
+      "timestamp": "2026-03-09T01:25:55.282937"
+    },
+    {
+      "index": 84,
+      "category": "冬季",
+      "prompt": "A family sledding down a snowy slope, with the children's joyful laughter captured in the scene.",
+      "image_url": "/outputs/43259376-d8b9-4fe3-a2e5-286a3b544ce7.png",
+      "thumbnail_url": "/outputs/thumb_43259376-d8b9-4fe3-a2e5-286a3b544ce7.jpg",
+      "seed": 185514194942780,
+      "timestamp": "2026-03-09T01:26:11.622659"
+    },
+    {
+      "index": 85,
+      "category": "冬季",
+      "prompt": "A winter sunrise over a frozen lake, with the first light creating a halo effect around the peaks.",
+      "image_url": "/outputs/9c900178-c225-4c09-b044-2ad2ad96262f.png",
+      "thumbnail_url": "/outputs/thumb_9c900178-c225-4c09-b044-2ad2ad96262f.jpg",
+      "seed": 417736218448716,
+      "timestamp": "2026-03-09T01:26:27.773073"
+    },
+    {
+      "index": 86,
+      "category": "冬季",
+      "prompt": "A solitary birch tree against a backdrop of rolling snow-covered hills, with the wind adding texture to the snow.",
+      "image_url": "/outputs/c976ada0-a5ee-482a-9b4c-c346aa15e80b.png",
+      "thumbnail_url": "/outputs/thumb_c976ada0-a5ee-482a-9b4c-c346aa15e80b.jpg",
+      "seed": 877727823914020,
+      "timestamp": "2026-03-09T01:26:44.928147"
+    },
+    {
+      "index": 87,
+      "category": "冬季",
+      "prompt": "An old wooden fence covered in snow, reflecting the cool tones of the winter evening.",
+      "image_url": "/outputs/a1a45f02-7257-4a12-873c-75ef1975b634.png",
+      "thumbnail_url": "/outputs/thumb_a1a45f02-7257-4a12-873c-75ef1975b634.jpg",
+      "seed": 615024815866538,
+      "timestamp": "2026-03-09T01:27:02.098996"
+    },
+    {
+      "index": 88,
+      "category": "冬季",
+      "prompt": "A group of friends having a snowball fight in a snowy meadow, with the camera focusing on their animated expressions.",
+      "image_url": "/outputs/f328f39a-eb35-4c38-b9ed-170465b674db.png",
+      "thumbnail_url": "/outputs/thumb_f328f39a-eb35-4c38-b9ed-170465b674db.jpg",
+      "seed": 642645341003742,
+      "timestamp": "2026-03-09T01:27:36.551417"
+    },
+    {
+      "index": 89,
+      "category": "冬季",
+      "prompt": "A snow-covered village with cobblestone streets and traditional houses, under the soft light of midday.",
+      "image_url": "/outputs/c5c472a3-35be-4d62-b0e4-ce4b99c67fa5.png",
+      "thumbnail_url": "/outputs/thumb_c5c472a3-35be-4d62-b0e4-ce4b99c67fa5.jpg",
+      "seed": 419391551366074,
+      "timestamp": "2026-03-09T01:27:51.689587"
+    },
+    {
+      "index": 90,
+      "category": "冬季",
+      "prompt": "A winter landscape at sunset, with the last rays of light creating a warm gradient across the snowy fields.",
+      "image_url": "/outputs/b0667aa7-2f4d-453a-be4c-883a0861a336.png",
+      "thumbnail_url": "/outputs/thumb_b0667aa7-2f4d-453a-be4c-883a0861a336.jpg",
+      "seed": 604434529968829,
+      "timestamp": "2026-03-09T01:28:08.841542"
+    },
+    {
+      "index": 91,
+      "category": "冬季",
+      "prompt": "A horse-drawn sleigh crossing a snow-covered meadow, pulling a carriage filled with people enjoying the winter weather.",
+      "image_url": "/outputs/f19939e0-6e0e-4b57-b1a3-e01b609a1db4.png",
+      "thumbnail_url": "/outputs/thumb_f19939e0-6e0e-4b57-b1a3-e01b609a1db4.jpg",
+      "seed": 962524894409333,
+      "timestamp": "2026-03-09T01:28:24.981333"
+    },
+    {
+      "index": 92,
+      "category": "冬季",
+      "prompt": "An empty ski resort chairlift track, stretching up into the snowy mountains, capturing the vastness of the winter landscape.",
+      "image_url": "/outputs/54a7e696-5270-4508-b911-44239ce9f276.png",
+      "thumbnail_url": "/outputs/thumb_54a7e696-5270-4508-b911-44239ce9f276.jpg",
+      "seed": 577500104444063,
+      "timestamp": "2026-03-09T01:28:49.334763"
+    },
+    {
+      "index": 93,
+      "category": "冬季",
+      "prompt": "A close-up of a snowflake landing on a person's nose, emphasizing the delicate detail with a macro lens.",
+      "image_url": "/outputs/74c08942-9c77-48b0-bcb0-b33ff61efdca.png",
+      "thumbnail_url": "/outputs/thumb_74c08942-9c77-48b0-bcb0-b33ff61efdca.jpg",
+      "seed": 989153456186785,
+      "timestamp": "2026-03-09T01:29:06.482292"
+    }
+  ]
+}
