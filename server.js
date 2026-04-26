@@ -64,6 +64,28 @@ app.get('/api/health', async (req, res) => {
     res.json(payload);
 });
 
+/** 自检：ComfyUI 是否可达 + 当前队列（仅用 /queue，避免 object_info 超大 JSON） */
+app.get('/api/comfy/status', async (req, res) => {
+    const base = comfy.base(COMFYUI_BASE_URL);
+    const out = {
+        comfyui_base: COMFYUI_BASE_URL,
+        reachable: false,
+        queue: null,
+        workflow_template:
+            process.env.COMFYUI_WORKFLOW_PATH ||
+            '(默认 llm-server/workflow-templates/minimal_txt2img_api.json)',
+        checkpoint_override: process.env.COMFYUI_CHECKPOINT || null,
+    };
+    try {
+        const qr = await axios.get(`${base}/queue`, { timeout: 5000 });
+        out.queue = qr.data;
+        out.reachable = true;
+    } catch {
+        out.reachable = false;
+    }
+    res.json(out);
+});
+
 /** 代理 ComfyUI 出图，避免浏览器跨端口取图被 CORS 拦 */
 app.get('/api/comfy/view', async (req, res) => {
     const { filename, subfolder = '', type = 'output' } = req.query;
@@ -302,6 +324,9 @@ app.listen(PORT, '0.0.0.0', () => {
     console.log(`局域网 IP: ${localAddresses()}`);
     console.log(`vLLM: ${VLLM_URL}`);
     console.log(`ComfyUI: ${COMFYUI_BASE_URL}（多 Agent comfy 子任务）`);
+    if (process.env.COMFYUI_CHECKPOINT) {
+        console.log(`ComfyUI checkpoint 覆盖: ${process.env.COMFYUI_CHECKPOINT}`);
+    }
     console.log(`模型: ${resolvedModelId || '(启动后首次对话从 /v1/models 自动解析)'}`);
     console.log('===================================\n');
 });

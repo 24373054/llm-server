@@ -83,7 +83,9 @@ async function checkHealth() {
         if (data.status === 'ok') {
             status.classList.add('online');
             status.classList.remove('offline');
-            status.querySelector('.text').textContent = 'Ready';
+            const comfyPart =
+                data.comfyui === 'connected' ? ' · Comfy' : data.comfyui === 'disconnected' ? ' · Comfy 离线' : '';
+            status.querySelector('.text').textContent = `Ready${comfyPart}`;
         } else {
             throw new Error('Service unavailable');
         }

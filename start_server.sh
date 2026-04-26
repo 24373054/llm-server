@@ -22,10 +22,15 @@ fi
 export LLM_SERVER_PORT="${LLM_SERVER_PORT:-38025}"
 export VLLM_BASE_URL="${VLLM_BASE_URL:-http://127.0.0.1:8000}"
 export VLLM_MODEL="${VLLM_MODEL:-}"
+export COMFYUI_BASE_URL="${COMFYUI_BASE_URL:-http://127.0.0.1:8188}"
+# 若默认工作流里的 ckpt 与你本机文件名不一致，可设置，例如: export COMFYUI_CHECKPOINT="xxx.safetensors"
+export COMFYUI_CHECKPOINT="${COMFYUI_CHECKPOINT:-}"
 
 echo "LLM_SERVER_PORT=$LLM_SERVER_PORT"
 echo "VLLM_BASE_URL=$VLLM_BASE_URL"
 echo "VLLM_MODEL=${VLLM_MODEL:-<首次请求从 vLLM 自动读取>}"
+echo "COMFYUI_BASE_URL=$COMFYUI_BASE_URL"
+echo "COMFYUI_CHECKPOINT=${COMFYUI_CHECKPOINT:-<未设置，用工作流 JSON 内 ckpt_name>}"
 
 if [ ! -d node_modules ]; then
   npm install
@@ -33,6 +38,10 @@ fi
 
 if ! curl -sf "${VLLM_BASE_URL}/health" >/dev/null; then
   echo "警告: 无法访问 ${VLLM_BASE_URL}/health ，请确认 vLLM 已启动。"
+fi
+
+if ! curl -sf "${COMFYUI_BASE_URL}/queue" >/dev/null; then
+  echo "警告: 无法访问 ${COMFYUI_BASE_URL}/queue ，多 Agent 的 Comfy 子任务将失败；请确认 ComfyUI 已启动。"
 fi
 
 exec npm start
