@@ -14,14 +14,22 @@ if [ -f "$PID_FILE" ]; then
     fi
   fi
   rm -f "$PID_FILE"
-  echo "已停止 (PID 文件)"
-  exit 0
+  echo "已停止 (PID 文件中的进程)"
 fi
 
-PID=$(lsof -ti:"$PORT" 2>/dev/null || true)
-if [ -n "${PID:-}" ]; then
-  kill $PID
-  echo "已停止占用端口 $PORT 的进程"
-else
-  echo "未找到运行中的服务"
+# 清掉仍占用端口的进程（例如旧版脚本只记了 npm PID、node 仍在监听）
+if command -v lsof >/dev/null 2>&1; then
+  PIDS=$(lsof -ti:"$PORT" 2>/dev/null || true)
+  if [ -n "${PIDS:-}" ]; then
+    kill $PIDS 2>/dev/null || true
+    sleep 1
+    PIDS=$(lsof -ti:"$PORT" 2>/dev/null || true)
+    if [ -n "${PIDS:-}" ]; then
+      kill -9 $PIDS 2>/dev/null || true
+    fi
+    echo "已释放端口 $PORT"
+    exit 0
+  fi
 fi
+
+echo "端口 $PORT 上无监听进程（若仍报错请检查是否换端口或 root 权限）"

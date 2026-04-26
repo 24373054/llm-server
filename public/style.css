@@ -322,8 +322,42 @@ main {
 
 .input-area {
     display: flex;
-    gap: var(--spacing-sm);
+    flex-direction: column;
+    gap: var(--spacing-xs);
     flex-shrink: 0;
+}
+
+.agent-toggle {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    line-height: 1.45;
+    cursor: pointer;
+    user-select: none;
+}
+
+.agent-toggle input {
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.agent-toggle code {
+    font-size: 12px;
+    background: #f0f0f0;
+    padding: 1px 5px;
+    border-radius: 4px;
+}
+
+.input-row {
+    display: flex;
+    gap: var(--spacing-sm);
+    align-items: flex-end;
+}
+
+.input-row textarea {
+    flex: 1;
 }
 
 textarea {
