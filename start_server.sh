@@ -1,57 +1,38 @@
-#!/bin/bash
-# 启动 LLM Chat Server（前台运行）
-
-echo "=== 启动 LLM Chat Server ==="
-echo ""
-
-# 配置
-PORT=38025
-VLLM_URL="http://127.0.0.1:8000"
-
-# 颜色
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-RED='\033[0;31m'
-NC='\033[0m'
-
-# 获取脚本所在目录
+#!/usr/bin/env bash
+# 前台启动 Web 壳（需已自行启动 vLLM）
+set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
-# 检查 node_modules
-echo -e "${YELLOW}[1/3] 检查依赖...${NC}"
-if [ ! -d "node_modules" ]; then
-    echo -e "${YELLOW}未找到 node_modules，正在安装依赖...${NC}"
-    npm install
-    if [ $? -ne 0 ]; then
-        echo -e "${RED}✗ 依赖安装失败${NC}"
-        exit 1
+# 未 conda activate 时，尽量用上 yz 里的 npm（需已: conda install -n yz -c conda-forge nodejs）
+if ! command -v npm >/dev/null 2>&1; then
+  for d in "${CONDA_PREFIX:-}" "${HOME}/miniconda3/envs/yz" "${HOME}/anaconda3/envs/yz"; do
+    if [[ -n "$d" && -x "${d}/bin/npm" ]]; then
+      export PATH="${d}/bin:${PATH}"
+      break
     fi
+  done
 fi
-echo -e "${GREEN}✓ 依赖已就绪${NC}"
-
-# 检查 vLLM 服务
-echo -e "${YELLOW}[2/3] 检查 vLLM 服务...${NC}"
-if curl -s ${VLLM_URL}/health > /dev/null 2>&1; then
-    echo -e "${GREEN}✓ vLLM 服务已运行${NC}"
-else
-    echo -e "${YELLOW}⚠ vLLM 服务未运行${NC}"
-    echo "请先启动 vLLM: ./start_vllm_background.sh"
-    echo "或继续启动服务器（将无法处理请求）"
-    read -p "是否继续？(y/N) " -n 1 -r
-    echo
-    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-        exit 1
-    fi
+if ! command -v npm >/dev/null 2>&1; then
+  echo "未找到 npm。请执行: conda activate yz" >&2
+  echo "若 yz 中仍无 npm: conda install -n yz -y -c conda-forge nodejs" >&2
+  exit 1
 fi
 
-# 启动服务
-echo -e "${YELLOW}[3/3] 启动服务器...${NC}"
-echo ""
-echo "端口: ${PORT}"
-echo "vLLM: ${VLLM_URL}"
-echo ""
-echo -e "${GREEN}服务器启动中...${NC}"
-echo ""
+export LLM_SERVER_PORT="${LLM_SERVER_PORT:-38025}"
+export VLLM_BASE_URL="${VLLM_BASE_URL:-http://127.0.0.1:8000}"
+export VLLM_MODEL="${VLLM_MODEL:-}"
 
-npm start
+echo "LLM_SERVER_PORT=$LLM_SERVER_PORT"
+echo "VLLM_BASE_URL=$VLLM_BASE_URL"
+echo "VLLM_MODEL=${VLLM_MODEL:-<首次请求从 vLLM 自动读取>}"
+
+if [ ! -d node_modules ]; then
+  npm install
+fi
+
+if ! curl -sf "${VLLM_BASE_URL}/health" >/dev/null; then
+  echo "警告: 无法访问 ${VLLM_BASE_URL}/health ，请确认 vLLM 已启动。"
+fi
+
+exec npm start

@@ -1,28 +1,21 @@
-#!/bin/bash
-# 测试vLLM服务
+#!/usr/bin/env bash
+set -euo pipefail
+BASE="${VLLM_BASE_URL:-http://127.0.0.1:8000}"
+MODEL="${VLLM_MODEL:-}"
 
-echo "=== 测试 vLLM 服务 ==="
+echo "GET $BASE/health"
+curl -sf "$BASE/health" && echo "" || { echo "vLLM 不可达"; exit 1; }
+
 echo ""
+echo "GET $BASE/v1/models"
+curl -sf "$BASE/v1/models" | python3 -m json.tool
 
-# 1. 健康检查
-echo "[1/3] 健康检查..."
-curl -s http://localhost:8000/health && echo "" || echo "✗ vLLM未运行"
-
-# 2. 获取模型列表
+if [ -z "$MODEL" ]; then
+  MODEL=$(curl -sf "$BASE/v1/models" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['data'][0]['id'])")
+fi
 echo ""
-echo "[2/3] 获取模型列表..."
-curl -s http://localhost:8000/v1/models | python3 -m json.tool
-
-# 3. 测试对话
-echo ""
-echo "[3/3] 测试对话..."
-curl -s http://localhost:8000/v1/chat/completions \
+echo "使用 model=$MODEL 测试 chat"
+curl -sf "$BASE/v1/chat/completions" \
   -H "Content-Type: application/json" \
-  -d '{
-    "model": "Qwen2.5-7B-Instruct",
-    "messages": [{"role": "user", "content": "Hello, who are you?"}],
-    "max_tokens": 100
-  }' | python3 -m json.tool
-
-echo ""
-echo "=== 测试完成 ==="
+  -d "{\"model\":\"$MODEL\",\"messages\":[{\"role\":\"user\",\"content\":\"用一句话说你好\"}],\"max_tokens\":64}" \
+  | python3 -m json.tool

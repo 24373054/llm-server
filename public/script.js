@@ -14,6 +14,31 @@ const AUTH_KEY = 'llm_auth_token';
 
 let conversationHistory = [];
 let isProcessing = false;
+let markedOptionsApplied = false;
+
+function renderMarkdown(text) {
+    if (text == null || text === '') {
+        return '';
+    }
+    if (typeof marked === 'undefined' || typeof DOMPurify === 'undefined') {
+        const d = document.createElement('div');
+        d.textContent = text;
+        return d.innerHTML;
+    }
+    try {
+        if (!markedOptionsApplied && typeof marked.use === 'function') {
+            marked.use({ breaks: true, gfm: true });
+            markedOptionsApplied = true;
+        }
+        const raw = marked.parse(text);
+        return DOMPurify.sanitize(raw, { USE_PROFILES: { html: true } });
+    } catch (e) {
+        console.warn('markdown parse', e);
+        const d = document.createElement('div');
+        d.textContent = text;
+        return d.innerHTML;
+    }
+}
 
 function checkAuth() {
     const token = sessionStorage.getItem(AUTH_KEY);
@@ -79,10 +104,16 @@ function addMessage(role, content, isTyping = false) {
     
     const contentDiv = document.createElement('div');
     contentDiv.className = 'message-content';
-    
-    const p = document.createElement('p');
-    p.textContent = content;
-    contentDiv.appendChild(p);
+
+    const body = document.createElement('div');
+    if (role === 'assistant') {
+        body.className = 'md-body';
+        body.innerHTML = renderMarkdown(content);
+    } else {
+        body.className = 'msg-plain';
+        body.textContent = content;
+    }
+    contentDiv.appendChild(body);
     
     messageDiv.appendChild(roleDiv);
     messageDiv.appendChild(contentDiv);
@@ -94,10 +125,15 @@ function addMessage(role, content, isTyping = false) {
     return messageDiv;
 }
 
-// Update message content
+// Update message content（助手：实时 Markdown；用户：纯文本）
 function updateMessage(messageDiv, content) {
-    const p = messageDiv.querySelector('.message-content p');
-    p.textContent = content;
+    const inner = messageDiv.querySelector('.md-body') || messageDiv.querySelector('.msg-plain') || messageDiv.querySelector('.message-content p');
+    if (!inner) return;
+    if (messageDiv.classList.contains('assistant') && inner.classList.contains('md-body')) {
+        inner.innerHTML = renderMarkdown(content);
+    } else {
+        inner.textContent = content;
+    }
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
 }
 
@@ -142,32 +178,32 @@ async function sendMessage() {
         
         const reader = response.body.getReader();
         const decoder = new TextDecoder();
-        
+        let sseBuffer = '';
+
         while (true) {
             const { done, value } = await reader.read();
-            if (done) break;
-            
-            const chunk = decoder.decode(value);
-            const lines = chunk.split('\n');
-            
+            sseBuffer += decoder.decode(value, { stream: !done });
+            const lines = sseBuffer.split('\n');
+            sseBuffer = lines.pop() || '';
+
             for (const line of lines) {
-                if (line.startsWith('data: ')) {
-                    const data = line.slice(6);
-                    if (data === '[DONE]') continue;
-                    
-                    try {
-                        const json = JSON.parse(data);
-                        const delta = json.choices[0]?.delta?.content;
-                        if (delta) {
-                            assistantContent += delta;
-                            assistantMessage.classList.remove('typing');
-                            updateMessage(assistantMessage, assistantContent);
-                        }
-                    } catch (e) {
-                        // Skip invalid JSON
+                if (!line.startsWith('data: ')) continue;
+                const data = line.slice(6).trimEnd();
+                if (data === '[DONE]') continue;
+
+                try {
+                    const json = JSON.parse(data);
+                    const delta = json.choices[0]?.delta?.content;
+                    if (delta) {
+                        assistantContent += delta;
+                        assistantMessage.classList.remove('typing');
+                        updateMessage(assistantMessage, assistantContent);
                     }
+                } catch (e) {
+                    // 半行 JSON 已由 sseBuffer 承接；其余忽略
                 }
             }
+            if (done) break;
         }
         
         // Add to conversation history
